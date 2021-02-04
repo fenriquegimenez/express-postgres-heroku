@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "In this walkthrough tutorial you will develop a REST API from scracth in Node.js using the Express framework and Postgres database. You will also learn how to deploy it to production with Heroku.",
   "main": "index.js",
+  "engines": {
+    "node": "11.x"
+  },
   "scripts": {
-    "test": "nodemon src/index.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/fenriquegimenez/express-postgres-heroku/issues"
   },
-  "homepage": "https://github.com/fenriquegimenez/express-postgres-heroku#readme"
+  "homepage": "https://github.com/fenriquegimenez/express-postgres-heroku#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
+  }
 }
